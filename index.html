@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/fontawesome-free-5.15.3-web/css/all.min.css">
+    <title>Restaurante Landuval</title>
+  </head>
+  <body>
+      <header style = "background: #e1701a">
+        <div>
+            <div>
+                <img src="img/cuchilleria.png" 
+                alt="Logo restauran"
+                height="100"
+                >
+            </div>
+            <div>
+                <nav class="navbar navbar-light " style = "background: #f6dcbf" >
+                    <a class="navbar-brand " href="#">
+                      <h1>Restaurante</h1>
+                    </a>
+                  </nav>
+            </div>
+        </div>
+      </header>
+
+      <main class="container-fluid py-3" style = "background: #f7a440">
+        <div class ="row">
+            <div class = "col-md-3">
+                <!--- CARD -->
+                <div class ="card">
+                    <div class = "card-header" style = "background: #f6dcbf">
+                        Registrar menu
+                    </div>
+                    <div class = "card-body px-2 py-2">
+                        <!-- input -->
+                        <div class = "mb-2">
+                            <label class="form-label" for="nombre-txt">Nombre</label>
+                            <input class="form-control" type="text" id="nombre-txt">
+                        </div>
+                        <!-- select -->
+                        <div class = "mb-2">
+                            <label for="" class = "mb-2">Horarios</label>
+                            <select class="form-select" id= "selec-horario">
+                            </select>
+                        </div>
+                        <!-- input numerico -->
+                        <div class = "mb-2">
+                            <label class="form-label" for="valor-num">Valor</label>
+                            <input class="form-control" type="number" id="valor-num">
+                        </div>
+                        <!--- Descripcion -->
+                        <div class="mb-2">
+                            <label class="form-label" for="description-txt">Descripcion</label>                                
+                            <textarea id="description-txt"></textarea>
+                        </div>
+                        <div class = "text-center">
+                            <button type="button" class="btn btn-danger btn-lg" id="boton-agregar">Agregar</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class = "col">
+                <div class = "card">
+                    <div class = "card-header" style = "background: #f6dcbf">Registro de orden</div>
+                    <div class = "card-body">
+                        <table class="table table-striped table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Horario</th>
+                                <th scope="col">Valor</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">Oferta</th>
+                              </tr>
+                            </thead>
+                            <tbody id ="tabla-pedido">
+                            </tbody>
+                          </table>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="vendor/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
